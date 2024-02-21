@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page6.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ekf8zsu.css">
+</head>
+<body>
+    <section class="part-1">
+    <div class="quotation">    
+    <div class="container"><img class="click-image" src="Photos Project 1/Quote1.png" alt="Image"onclick="moveImages()"></div>
+    <div class="container"><img class="click-image-1" src="Photos Project 1/Quote2.png" alt="Image" onclick="moveImages()"></div>
+    <p class="m-1">Continously click ""</p>
+    <p class="m-2">Swipe -></p>
+    </div>
+    </section>
+    <section class="part-2">
+        <p class="header">Complications make eventually for simplicity</p>
+        <p class="p-1">Complications make eventually for simplicity and therefore I have always liked dependent adverbial clauses. I have like dependent adverbial clauses because of their variety of dependence and independence. You can see how loving the intensity of complication of these things that commas would be degrading. Why if you want the pleasure of concentrating on the final simplicity of excessive complication would you want any artificial aid to bring about that simplicity. Do you see now why I feel about that simplicity. Do you see now why I feel about the comma as I did and as I do.
+        </p>
+        <p class="p-2">Think about anything you really like to do and you will see what I mean.
+        </p>
+        <p class="p-3">When it gets really difficult you want to disentangle rather than to cut the knot, at least of anybody feels who is working with any thread, so anybody feels who is working with any tool so anybody feels who is writing any sentence or reading it after it has been written. And what does a comma do, a comma does nothing but make easy a thing that if you like it enough is easy enough without the comma. A long complicated sentence should force itself upon you, make you know yourself knowing it and the comma, well at the most a comma is a poor period that lets you stop and take a breath but if you want to take a breath you ought to know yourself that you want to take a breath. It is not like stopping altogether has something to do with going on, but taking a breath well you are always taking a breath and why emphasize one breath rather than another breath. Anyway that is the way I felt about it and I felt that about it very very strongly. And so I almost never used a comma. The longer, the more complicated the sentence the greater the number of the same kinds of words I had following one after another, the more the very more I had of them the more I felt the passionate need of their taking care of themselves by themselves and not helping them, and thereby enfeebling them by putting in a comma.
+        </p>
+        <p class="p-4">So that is the way I felt about punctuation in prose, in poetry it is a little different but more so and later I will go into that. But that is the way I felt about punctuation in prose.
+        </p>
+        <div class="next">
+            <ul>
+             <li>
+             <a href="page6.html">""</a>
+             <ul>
+                 <li><a href="page2.html">.</a></li>
+                 <li><a href="exclamation.html">!</a></li>
+                 <li><a href="page4.html">?</a></li>
+                 <li><a href="page5.html">,</a></li>
+             </ul>
+             </li>
+             </ul>
+         </div>
+         <a href="index.html" class="btn">Back <span><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        function moveImages() {
+            const clickImage = document.querySelector('.click-image');
+            const clickImage1 = document.querySelector('.click-image-1');
+
+            // Move click-image to the right
+            clickImage.style.transform = 'translateX(-50%)';
+
+            // Move click-image-1 to the left
+            clickImage1.style.transform = 'translateX(50%)';
+
+            // Create and append hidden text after the images have moved
+        const hiddenText = document.createElement('p');
+        hiddenText.textContent = 'You look ridiculous if you dance. You look ridiculous if you dont dance. So you might as well dance';
+        hiddenText.classList.add('hidden-text');
+        document.querySelector('.part-1').appendChild(hiddenText); // Append to the appropriate section
+
+        // Trigger a reflow to ensure the transition for opacity works
+        hiddenText.getBoundingClientRect();
+
+        // Make the hidden text visible
+        hiddenText.style.opacity = '1';
+
+        
+        }
+    </script>
+</body>
+</html>

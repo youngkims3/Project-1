@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page5.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ekf8zsu.css">
+</head>
+<body>
+    <section class="part-1">
+        <div class="container"><img class="click-image" src="Photos Project 1/Comma.png" alt="Image"></div>
+        <p onclick="toggleVisibility()" class="hidden">Click me now <span class="hidden-word">,</span> so I can be gramatically correct.</p>
+        <p class="m-1">Click ,</p>
+        <p class="m-2">Swipe -></p>
+    </section>
+    <section class="part-2">
+        <p class="header">What does a comma do</p>
+        <p class="p-1">What does a comma do.
+        </p>
+        <p class="p-2">I have refused them so often and left the out so much and did without them so continually that I have come finally to be indifferent to them. I do not now care whether you put them in or not but for a long time I felt very definitely about them and would have nothing to do with them.
+        </p>
+        <p class="p-3">As I say commas are servile and they have no life of their own, and their use is not a use, it is a way of replacing one’s own interest and I do decidedly like to like my own interest my own interest in what I am doing. A comma by helping you along holding your coat for you and putting on your shoes keeps you from living your life as actively as you should lead it and to me for many years and I still do feel that way about it only now I do not pay as much attention to them, the use of them was positively degrading. Let me tell you what I feel and what I mean and what I felt and what I meant.
+        </p>
+        <p class="p-4">When I was writing those long sentences of The Making of Americans, verbs active present verbs with long dependent adverbial clauses became a passion with me. I have told you that I recognize verbs and adverbs aided by prepositions and conjunctions with pronouns as possessing the whole of the active life of writing. 
+        </p>
+        <div class="next">
+            <ul>
+             <li>
+             <a href="page6.html">""</a>
+             <ul>
+                 <li><a href="page2.html">.</a></li>
+                 <li><a href="exclamation.html">!</a></li>
+                 <li><a href="page4.html">?</a></li>
+                 <li><a href="page5.html">,</a></li>
+             </ul>
+             </li>
+             </ul>
+         </div>
+        <a href="page6.html" class="btn">Swipe Next <span><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        const clickImage = document.querySelector('.click-image');
+        const hiddenParagraph = document.querySelector('.hidden');
+
+        clickImage.addEventListener('click', function() {
+            hiddenParagraph.classList.toggle('visible');
+        });
+    </script>
+    
+    <script>
+        function toggleVisibility() {
+            const hiddenWord = document.querySelector('.hidden-word');
+            hiddenWord.style.display = hiddenWord.style.display === 'none' ? 'inline' : 'none';
+        }
+    </script>
+
+</body>
+</html>
